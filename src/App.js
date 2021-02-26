@@ -33,7 +33,7 @@ function App() {
     <div className="App">
 
       {
-        users.map(user => <UserInfo name={user.name.first + ' ' +user.name.last} gender="user.gender" cell="user.cell" key="user.id.name"></UserInfo>)
+        users.map(user => <UserInfo name={user.name.first + ' ' +user.name.last} gender={user.gender} cell={user.cell} key={user.id.name}></UserInfo>)
       }
 
 
